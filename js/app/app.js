@@ -1,25 +1,21 @@
 angular
-    .module('app', ['ui.router'])
-    .config(function($stateProvider){
-      $stateProvider
-        .state('home', {
-          url: '/',
-          templateUrl: 'views/home.html',
-          controller: 'HomeController'
-        })
-        .state('home.notifications', {
-          url: 'notifications',
-          templateUrl: 'views/home/notifications.html',
-          controller: 'NotifcationsHomeController'
-        })
-        .state('home.timeline', {
-          url: 'timeline',
-          templateUrl: 'views/home/timeline.html',
-          controller: 'TimelineHomeController'
-        })
-        .state('home.user', {
-          url: 'user',
-          templateUrl: 'views/home/user.html',
-          controller: 'UserHomeController'
-        })
-    })
+  .module('app', ['ui.router'])
+  .config(function($stateProvider){
+    $stateProvider
+      .state('home', {
+        url: '/',
+        templateUrl: 'views/home.html',
+      })
+      .state('home.notifications', {
+        url: 'notifications',
+        templateUrl: 'views/home/notifications.html',
+      })
+      .state('home.timeline', {
+        url: 'timeline',
+        templateUrl: 'views/home/timeline.html',
+      })
+      .state('home.user', {
+        url: 'user',
+        templateUrl: 'views/home/user.html',
+      })
+  });
